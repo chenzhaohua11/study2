@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+<style>
+ *{margin:0px;}
+ /*外壳*/
+ .c{
+ background-color:green;
+ height:900px;
+ width:1800px;
+ padding:200px;
+  }
+/*盾牌盒子*/
+.e {
+   width: 1000px;
+   float:left;
+   position:relative;
+   }
+
+ .e p{
+ 
+ position:absolute;margin:200px  200px;
+ }
+/* 文字盒子 */
+.f{
+   padding: 100px;
+   float:left;
+   }
+ .pic1{
+ transform:translate(50px,50px) rotate(45deg)
+}   
+ .pic2{
+ transform:translate(21px,32px) rotate(35deg)
+   }
+ .pic3{
+ transform:translate(50px,50px) rotate(25deg)
+   }
+ .pic4{
+ transform:translate(70px,50px) rotate(65deg)
+   }
+ .pic5{
+ transform:translate(26px,50px) rotate(75deg)
+   }
+ .pic6{
+ transform:translate(23px,50px) rotate(25deg)
+   }
+ .pic7{
+ transform:translate(5px,50px) rotate(-45deg)
+   }
+ .pic8{
+ transform:translate(22px,5px) rotate(15deg)
+   }
+.e img {
+   transition:all 5s  ease-out 0.1s;
+   opacity:0;
+   float:left;
+   }
+ .d img {
+   transform:translate(0px,0px) rotate(0);
+   opacity:1;
+   }
+</style>
+ </head>
+ <body>
+  <div  class="c">
+    <!-- 盾牌 -->
+	<div class="e">
+	<img src="img/img_01.png"class="pic1"/>
+	<img src="img/img_03.png"class="pic2"/>
+	<img src="img/img_05.png"class="pic3"/>
+	<img src="img/img_07.png"class="pic4"/>
+	<img src="img/img_09.png"class="pic5"/>
+	<img src="img/img_11.png"class="pic6"/>
+	<img src="img/img_13.png"class="pic7"/>
+	<img src="img/img_15.png"class="pic8"/>
+    <p>
+     <img src="img/word.png"/>
+    </p>
+ 
+ </div>
+    <!-- 文字 -->
+	
+ </div>
+    
+   
+<script src="js/jquery.min.js"></script>
+ <script>
+   setTimeout(function(){
+   $(".e").addClass("d");
+    },2000
+   )
+  </script>
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  function a(b){
+   if(b==1){
+  alert("不够")
+  }
+   if(b==100){
+  alert("还是不够")
+  }
+   if(b>=1000){
+  alert("加油")
+  }
+  else{
+  alert("继续")
+  }
+  };
+  a(200);
+  </script>
+ </body>
+</html>

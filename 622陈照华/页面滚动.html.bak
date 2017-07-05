@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ <style>
+ *{margin:0px;padding:0;}
+ .cc{
+    background-color:#00cccc;
+    text-align:center;
+	 height:800px;
+   }
+.c{
+ background-color:green;
+ height:100%;
+ width:1800px;
+
+  }
+   .logo {
+    height:200px;
+    background-color:#00cccc;
+    text-align:center;
+         } 
+ .word img{
+    margin-left: 10px;
+    background-color:#00cccc;
+	opacity:0 ;
+	transition: all 2s ease-out 0.2s;	}	
+ .word2 img{
+    margin-left: 20px;
+    background-color:#00cccc;
+    
+		   }	
+ .word.d img{
+    margin-left:0px;
+    opacity:1;
+ }
+/*盾牌盒子*/
+.e {
+   width: 500px;
+   margin-right:40px;
+   float:left;
+   }
+/* 文字盒子 */
+.f{
+   padding: 100px;
+   float:left;
+   }
+ .pic1{
+ transform:translate(50px,50px) rotate(45deg)
+   }
+ .pic2{
+ transform:translate(21px,32px) rotate(35deg)
+   }
+ .pic3{
+ transform:translate(50px,50px) rotate(25deg)
+   }
+ .pic4{
+ transform:translate(70px,50px) rotate(65deg)
+   }
+ .pic5{
+ transform:translate(26px,50px) rotate(75deg)
+   }
+ .pic6{
+ transform:translate(23px,50px) rotate(25deg)
+   }
+ .pic7{
+ transform:translate(5px,50px) rotate(-45deg)
+   }
+ .pic8{
+ transform:translate(22px,5px) rotate(15deg)
+   }
+ .pic9{
+  transform:translate(15px,50px) rotate(95deg)
+   }
+ .e img {
+   transition:all 5s  ease-out 0.1s;
+   opacity:0;
+   }
+ .dd img {
+   transform:translate(0px,0px) rotate(0);
+   opacity:1;
+   }
+
+ /*定义样式*/
+ .page1{
+
+
+ }
+  .page2{
+ 
+
+ }
+  .page3{
+ background-color:blue;
+
+ }
+ </style>
+ 
+ </head>
+ <body>
+<div class="page">
+  <div  class="page1 section">
+	<div  class="cc">
+	 
+
+		 <!-- 上面一部分 -->
+		<div class="logo">
+		  <img src="img/logo.png"/>
+		</div>
+		<!-- 中间一部分 -->
+		<div class="word">
+			<img src="img/text_1.png"/>
+			<img src="img/text_2.png"/>
+			<img src="img/text_3.png"/>
+			<img src="img/text_4.png"/>
+			<img src="img/text_5.png"/>
+			<img src="img/text_6.png"/>
+			<img src="img/text_7.png"/>
+			<img src="img/text_8.png"/>
+		</div>
+		<!-- 下面一部分 -->
+		<div class="word2">
+		   <img src="img/info_1.png"/>
+		</div>
+  </div>
+    
+ 
+ 
+  </div>
+ <div  class="page2 section">
+	 <div  class="c">
+		<!-- 盾牌 -->
+		<div class="e">
+		<img src="img/shield_1.png"class="pic1"/>
+		<img src="img/shield_2.png"class="pic2"/>
+		<img src="img/shield_3.png"class="pic3"/>
+		<img src="img/shield_4.png"class="pic4"/>
+		<img src="img/shield_5.png"class="pic5"/>
+		<img src="img/shield_6.png"class="pic6"/>
+		<img src="img/shield_7.png"class="pic7"/>
+		<img src="img/shield_8.png"class="pic8"/>
+		<img src="img/shield_9.png"class="pic9"/>
+		</div>
+		<!-- 文字 -->
+		<div  class="f">
+		 <img src="img/info_2.png"/>
+	    </div>
+ </div>
+    
+
+ 
+  </div>
+ 
+  <div  class="page3 section">
+   <img src="img/img.jpg">
+  </div>
+</div>
+  <!-- 引入基础工具 -->
+   <script src="js/jquery.min.js"></script>
+  <!-- 引入全屏工具 -->
+   <script src="js/jquery.fullPage.min.js"></script>
+   <script>
+	   $(".page").fullpage({
+	   afterLoad:function(a,index){
+	   if(index == 1){
+	    $(".word").addClass("d");
+	    $(".e").removeClass("dd");
+	   }
+	   if(index == 2){
+	    $(".e").addClass("dd");
+	   $(".word").removeClass("d");
+	   }
+	   }}
+	   
+	   );
+
+	 setTimeout(function(){
+	   $(".word").addClass("d");
+		},2000
+	   )
+	 setTimeout(function(){
+	   $(".e").addClass("dd");
+		},2000
+	   )
+   </script>
+ </body>
+</html>
